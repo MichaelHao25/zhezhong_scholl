@@ -50,31 +50,6 @@ position: absolute;
 	clear: both;
 }
 
-
-
-input[type="checkbox"] {
-    display: none;
-}
-
-label input[type="checkbox"] + span {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: -4px 6px 0 0;
-    vertical-align: middle;
-    background: url(../img/index_tick.png) left center no-repeat;
-    cursor: pointer;
-}
-
-label input[type="checkbox"]:checked + span {
-    background: url(../img/index_tick.png) right top no-repeat;
-}
-
-
-
-
-
-
 ::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #776547;

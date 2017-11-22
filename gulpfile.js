@@ -83,12 +83,12 @@ gulp.task('css', function() {
         //  unitPrecision:5,
         //   propWhiteList: []
         // }),
-    pxtorem({
-        rootValue: 100,
-        replace: true,
-        unitPrecision: 5,
-        propWhiteList: []
-    }),
+    // pxtorem({
+    //     rootValue: 100,
+    //     replace: true,
+    //     unitPrecision: 5,
+    //     propWhiteList: []
+    // }),
         // atImport,
         // mqpacker,
         // cssnano({
