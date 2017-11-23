@@ -4,6 +4,7 @@ body{
 	position: relative;
 	/*overflow-x: hidden;*/
 	width: 100%;
+	min-width: 1200px;
 }
 @media(min-width:1200px){
 	.container{
@@ -713,9 +714,9 @@ body{
 	width: 195px;
 	background: #00a1e9;
 	padding: 15px 0;
-	@media(max-width:768px){
+/*	@media(max-width:768px){
 		display: none;
-	}
+	}*/
 }
 
 .fixed-left-layout{
