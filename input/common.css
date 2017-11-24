@@ -5,6 +5,9 @@ body{
 	/*overflow-x: hidden;*/
 	width: 100%;
 	/*min-width: 1200px;*/
+	@media(max-width:768px){
+		padding-bottom: 61px;
+	}
 }
 @media(min-width:1200px){
 	.container{
@@ -111,13 +114,11 @@ body{
 		padding: 0;
 	}
 	.brand{
+		display: block;
 		@media(max-width:768px){
 			height: 50px;
 			display: flex;
 			align-items: center;
-		}
-		&,a{
-			display: block;
 		}
 		img{
 			max-width:234px;
@@ -185,7 +186,7 @@ body{
 .main{
 	.banner{
 		a{
-			&,img{
+			,img{
 				display: block;
 				width: 100%;
 			}
@@ -209,13 +210,13 @@ body{
 				color: #59595b;
 				line-height: 1.2;
 				@media(max-width:768px){
-					font-size: 26px;
+					font-size: 20px;
 				}
 				span{
 					color: #0174b3;
 					font-size: 35px;
 					@media(max-width:768px){
-						font-size: 30px;
+						font-size: 24px;
 					}
 				}
 			}
@@ -223,7 +224,7 @@ body{
 				font-size: 22px;
 				color: #767676;
 				@media(max-width:768px){
-					font-size: 18px;
+					font-size: 16px;
 				}
 			}
 		}
@@ -254,7 +255,7 @@ body{
 				background:url(../img/hico11.png) right 15px center/20px 12px no-repeat;
 			}
 			input{
-				&::placeholder{
+				::placeholder{
 					font-family: 'microsoft yahei';
 					line-height: 1;
 					padding-top: 2px;
@@ -270,11 +271,11 @@ body{
 				background: #0174b3;
 				text-align: center;
 				@media(max-width:1200px){
-					font-size: 30px;
-				}
-				@media(max-width:1200px){
 					padding: 8px 0;
 					font-size: 26px;
+				}
+				@media(max-width:768px){
+					font-size: 20px;
 				}
 				&:after{
 					content:'';
@@ -306,10 +307,10 @@ body{
 					font-size: 70px;
 					color: #9cdcff;
 					@media(max-width:1200px){
-						font-size: 40px;
-					}
-					@media(max-width:1200px){
 						font-size: 30px;
+					}
+					@media(max-width:768px){
+						font-size: 26px;
 					}
 				}
 			}
@@ -326,6 +327,9 @@ body{
 						margin: 5% auto;
 						width: 80%;
 						max-width:490px;
+						@media(max-width:768px){
+							width: 60%;
+						}
 					}
 				}
 				.btn-group{
@@ -423,6 +427,10 @@ body{
 					color: #5a5b5d;
 					line-height: 46px;
 					padding-left: 90px;
+					@media(max-width:768px){
+						font-size: 20px;
+						padding-left: 60px;
+					}
 				}
 				span{
 					position: absolute;
@@ -432,6 +440,9 @@ body{
 					color: #0174b3;
 					font-weight: bold;
 					line-height: 1;
+					@media(max-width:768px){
+						font-size: 40px;
+					}
 				}
 			}
 			.body{
@@ -462,18 +473,19 @@ body{
 				display: inline-block;
 				max-width:390px;
 				position: relative;
+				+.pic{
+					margin-left:5%;
+				}
+
 				@media(max-width:768px){
 					display: block;
 					margin: 0 auto;
 					width: 80%;
-					&+.pic{
+					+.pic{
 						margin-top: 15px;
 						margin-bottom: 15px;
 						margin-left: auto;
 					}
-				}
-				&+.pic{
-					margin-left:5%;
 				}
 				.tips{
 					position: absolute;
@@ -484,10 +496,18 @@ body{
 					font-size: 24px;
 					color: #fff;
 					background: #0174b3;
-					writing-mode:horizontal-tb;
-					writing-mode: tb-rl;
 					text-align: center;
-					line-height: 2.5;
+					line-height: 1;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@media(max-width:768px){
+						font-size: 20px;
+					}
 				}
 				img{
 					vertical-align: top;
@@ -544,12 +564,15 @@ body{
 		background: #f1f1f1;
 		table{
 			width: 100%;
-			tr,,th,td{
+			tr,th,td{
 				padding: 10px 3%;
 				text-align: left;
 				font-size: 18px;
 				color: #3a3a3a;
 				line-height: 1.5;
+				@media(max-width:768px){
+					font-size: 14px;
+				}
 			}
 			tr{
 				background: #daf2fd;
@@ -559,7 +582,7 @@ body{
 			}
 			tr.bgd81e2b{
 				background: #d81e2b;
-				&,th{
+				th{
 					font-weight: normal;
 					color: #fff;
 				}
@@ -691,6 +714,12 @@ body{
 		color: #fff;
 		line-height: 50px;
 		border-bottom: 1px solid #2fa4e4;
+		@media(max-width:768px){
+			font-size: 16px;
+			span{
+				padding: 0 5px;
+			}
+		}
 		span{
 			padding: 0 10px;
 		}
@@ -701,6 +730,12 @@ body{
 		color: #fff;
 		line-height: 2;
 		text-align: center;
+		@media(max-width:768px){
+			font-size: 12px;
+			span{
+				display: block;
+			}
+		}
 		span{
 			padding: 0 5px;
 		}
@@ -832,20 +867,34 @@ body{
 .btn-zx .btn{width:90%;padding-left:15px;padding-right:15px;margin:20px 0;border-radius:3px;font-size:1em;}
 .btn-bottoms{position:fixed;bottom:0;width:100%;padding:10px 0;background-color:rgba(234,234,234,.9)}
 .btn-bottoms div{margin:0 5%;}
-.btn-bottoms .btn{width:42%;margin:0;background-color:#af1b40;border-color:#af1b40;box-shadow:1px 1px 3px rgba(0,0,0,.2)}
+.btn-bottoms .btn{width:42%;margin:0;background-color:#0174b3;border-color:#0174b3;box-shadow:1px 1px 3px rgba(0,0,0,.2)}
 
 .btn-bottoms1{ padding: 0; background: none; }
 .btn-bottoms1 .btn{ width: 100%; border-radius: 0; line-height: 1.6; font-size: 1.2em; }
 
 .flex-free-tel{
-	    position: fixed;
-    width: 10%;
-    right: 0;
-    background-color: rgb(192, 80, 77);
-    top: 53%;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    border-radius: 5px;
-    padding: 5px 0;
-    text-align: center;
+	position: fixed;
+	width: 10%;
+	right: 0;
+	background-color:#0174b3;
+	top: 53%;
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.wap-button{
+	a{
+		padding: 10px 0 12px;
+		color: #fff;
+		font-size: 0.875em;
+		margin: 10px 0 20px;
+		background: #0174b3;
+		border: 1px solid #0174b3;
+		text-align: center;
+		border-radius: 8px;
+		display: block;
+	}
 }
