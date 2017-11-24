@@ -817,3 +817,34 @@ body{
 		font-size: 20px;
 	}
 }
+
+.mobile-steps{
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+
+.cl{
+	.btn{ padding: 10px 0 12px; color: #fff; font-size: 0.875em; width: 150px; margin: 30px 0 0; background: #af1b40; border: 1px solid #af1b40; text-align: center; border-radius: 8px; display: inline-block; }
+}
+.btn-zx .btn{width:90%;padding-left:15px;padding-right:15px;margin:20px 0;border-radius:3px;font-size:1em;}
+.btn-bottoms{position:fixed;bottom:0;width:100%;padding:10px 0;background-color:rgba(234,234,234,.9)}
+.btn-bottoms div{margin:0 5%;}
+.btn-bottoms .btn{width:42%;margin:0;background-color:#af1b40;border-color:#af1b40;box-shadow:1px 1px 3px rgba(0,0,0,.2)}
+
+.btn-bottoms1{ padding: 0; background: none; }
+.btn-bottoms1 .btn{ width: 100%; border-radius: 0; line-height: 1.6; font-size: 1.2em; }
+
+.flex-free-tel{
+	    position: fixed;
+    width: 10%;
+    right: 0;
+    background-color: rgb(192, 80, 77);
+    top: 53%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+}
