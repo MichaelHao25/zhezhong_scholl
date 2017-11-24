@@ -368,6 +368,7 @@ body{
 				float: left;
 				width: 18%;
 				@media(max-width:768px){
+					position: relative;
 					width: 48%;
 					&:nth-child(2)~li{
 						margin-top: 2%;
@@ -390,6 +391,21 @@ body{
 					background: #e9e9e9;
 					@media(max-width:1200px){
 						padding: 5px 0;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						display: -webkit-flex;
+						display: -moz-flex;
+						display: -ms-flex;
+						display: -o-flex;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-direction: column;
+						background: rgba(0,0,0,0.4);
+						color: #fff;
 					}
 					span{
 						@media(max-width:1200px){
@@ -549,12 +565,19 @@ body{
 			color: #fff;
 			border: 1px solid #ffffff;
 			background:url(../img/hico16.png) right 20px center no-repeat;
+			@media(max-width:768px){
+				display: block;
+				margin: 0 auto;
+			}
 		}
 
 	}
 	.works{
 		background: #fff;
 		padding: 5% 0;
+		@media(max-width:768px){
+			padding-top: 0;
+		}
 		.pic{
 			img{
 				display: block;
@@ -594,15 +617,8 @@ body{
 	}
 	.wonderful{
 		.pic-wrap{
+			overflow: hidden;
 			margin-left: -2%;
-			@media(max-width:768px){
-				margin-left: -3%;
-				li{
-					width: 47%;
-					margin-left: 3%;
-					margin-bottom: 3%;
-				}
-			}
 			li{
 				float: left;
 				margin-bottom: 2%;
@@ -614,6 +630,15 @@ body{
 				img{
 					display: block;
 					width: 100%;
+				}
+			}
+
+			@media(max-width:768px){
+				margin-left: -3%;
+				li{
+					width: 47%;
+					margin-left: 3%;
+					margin-bottom: 3%;
 				}
 			}
 		}
