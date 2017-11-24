@@ -150,6 +150,15 @@ body{
 		@media(min-width:768px){
 			display: block!important;
 		}
+		a{
+			float: left;
+			font-size: 18px;
+			color: #353434;
+			line-height: 50px;
+			&+a{
+				padding-left: 4.5%;
+			}
+		}
 		@media(max-width:768px){
 			position: absolute;
 			top: 0;
@@ -172,15 +181,7 @@ body{
 				}
 			}
 		}
-		a{
-			float: left;
-			font-size: 18px;
-			color: #353434;
-			line-height: 50px;
-			&+a{
-				padding-left: 4.5%;
-			}
-		}
+
 	}
 }
 .main{
@@ -202,6 +203,7 @@ body{
 			background:url(../img/hico10.png) left center no-repeat;
 			@media(max-width:768px){
 				padding-left: 0;
+				padding: 20px 0;
 				background: none;
 				text-align: center;
 			}
